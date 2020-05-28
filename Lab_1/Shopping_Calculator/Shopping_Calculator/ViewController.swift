@@ -16,15 +16,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         return pickerData.count
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        if row == 2 {
-            taxRate.text="12.1"
-        }
-        if row == 1{
-            taxRate.text="11.2"
-        }
-        if row == 0{
-            taxRate.text="10.4"
-        }
+        
     }
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return pickerData[row]
@@ -48,15 +40,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-//extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate{
-//    func numberOfComponents(in pickerView:UIPickerView)->Int {
-//        return 1
-//    }
-//    func pickerView(_ pickerView: UIPickerView, widthForComponent component: Int) ->
-//
-//    }
-    
-    //}
     @IBOutlet weak var Original: UITextField!
     @IBOutlet weak var Discunt: UITextField!
     @IBOutlet weak var Tax: UITextField!
